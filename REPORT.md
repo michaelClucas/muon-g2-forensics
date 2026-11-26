@@ -128,3 +128,25 @@ The question is which input made a_mu^HVP,LO(e+e-) come out about 20 x 10^-10 (2
 - WP20 did not use tau data because the estimable IB corrections did "not yet provide an understanding of the IB difference" between tau and e+e- [S:WP20 Sec. 2.2.6].
 - Tau sits high: DHLMZ get a_mu^pipi(tau) = 517.3(1.9)(2.2)(1.9) x 10^-10 [S:DHLMZ23 Eq. 4]; WP25's tau estimate is 517.2(5.8), between BaBar (514.1) and CMD-3 (525.9), implying HVP LO 704.5, 8.7 below lattice [S:WP25 Table 5]. Tau-based W window 232.4 [S:DHLMZ23 Fig. 12]. Masjuan, Miranda and Roig find tau-based windows compatible with lattice [S:MMR23].
 - Inference: excluding tau removed the one pre-2020 input that pointed upward. The reason for excluding it was defensible, but part of the tau-vs-e+e- disagreement was a symptom of the low e+e- data rather than only an IB problem. How much is not established; tau is still 8.7 x 10^-10 below lattice.
+
+## 4. Windows and energy regions
+
+Time-momentum representation: a_mu = 4 alpha^2 Int dt Ktil(t) G(t), with G(t) the Euclidean vector correlator. Windows: SD (t < 0.4 fm), W (0.4-1.0 fm), LD (t > 1.0 fm), smoothed with Delta = 0.15 fm [S:RBC18]. `calc/kernel.py` computes Ktil(t) numerically and checks that its Laplace transform reproduces 2K(omega^2)/omega^3 (relative error below 1e-6 from 0.3 GeV up). It then gives the share of each energy's contribution falling in each window: at 0.5 GeV SD/W/LD = 0.8/13.1/86.1%; at 0.775 GeV 3.6/34.8/61.6%; at 1.02 GeV 8.4/51.8/39.9%; at 2 GeV 39.3/57.2/3.6% [calc:kernel, out/window_fractions_vs_energy.csv].
+
+### 4.1 Lattice minus data-driven, by window (x10^-10) [calc:section4_windows]
+
+| Window | Lattice (WP25 avg) | e+e- (WP20-era data, CHKLST22) | Difference | sigma | Share of gap |
+|---|---|---|---|---|---|
+| SD | 69.10(26) | 68.4(5) | +0.7 | 1.2 | 3.5% |
+| W | 236.58(43) | 229.4(1.4) | +7.2 | 4.9 | 35.5% |
+| LD | 407.5(6.1) (total - SD - W) | 395.1(2.4) | +12.4 | 1.9 | 61.5% |
+| Total | 713.2(6.1) | 693.0(3.9) | +20.2 | 2.8 | 100% |
+
+LD for lattice is derived here by subtraction, and its uncertainty ignores correlations, so the 1.9 sigma is conservative (Inference). The relative excess is +1.0% in SD and +3.1% in both W and LD. SD is dominated by energies above ~1.5-2 GeV where R(s) is close to perturbative QCD; its near-agreement argues against a global lattice normalization problem such as scale setting (Inference). The gap is a uniform ~3% in the two windows that the rho region dominates.
+
+### 4.2 Mapping the gap to energy
+- The CMD-3 - KLOE pi pi difference reconstructed from the raw data (0.32-0.975 GeV) is +21.5 x 10^-10 in total. Weighted by window: SD +0.70, W +6.85, LD +13.91, i.e. 3% / 32% / 65% [calc:section4_windows].
+- Independent check: DHLMZ computed the full W window with each pi pi dataset as input: KLOE 227.3, BaBar 230.8, tau 232.4, CMD-3 234.2 [S:DHLMZ23 Fig. 12]. Their CMD-3 - KLOE difference, 6.9, matches the 6.85 obtained here from the published tables.
+- If the lattice-vs-data gap were caused by a pi pi normalization deficit with the energy profile of KLOE relative to CMD-3, 32% of it would appear in W and 65% in LD. Observed: 36% and 61%. Scaling the observed W difference (7.2) by 1/0.32 predicts a total gap of 22.5 vs the actual 20.2 [calc:section4_windows]. The window pattern is consistent with a 3-5% deficit in the pi pi cross section spread across roughly 0.5-1.0 GeV, centred on the rho (Inference). It is not consistent with a problem confined to high energies (that would show in SD) or to the threshold region below 0.5 GeV (that would put over 85% in LD).
+- With CMD-3 as the pi pi input the W window becomes 234.2, 2.4 x 10^-10 below the lattice average 236.58(43); CMD-3 removes about 70% of the W discrepancy. With CMD-3 in the full HVP the total equals the lattice average (713.2) [S:WP25 Table 5]. I do not read anything into the 2.4 residual given the uncertainties of the non-pi pi channels in DHLMZ's W evaluation (Inference).
+- Energy range holding the discrepancy: 0.5-0.975 GeV in pi+pi-, with 87% of the CMD-3 - KLOE difference (18.7 of 21.5 x 10^-10) between 0.6 and 0.88 GeV [calc:pipi_by_experiment, out/pipi_energy_breakdown.csv].

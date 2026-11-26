@@ -1,0 +1,23 @@
+A. Lattice (WP25 averages) minus data-driven (Colangelo et al. 2022, WP20-era data), 1e-10
+   window  lattice        data-driven    diff      sigma   share of total diff   rel. diff
+   SD       69.10(0.26)    68.4(0.5)    +0.70     1.2      3.5%            +1.0%
+   W       236.58(0.43)   229.4(1.4)    +7.18     4.9     35.5%            +3.1%
+   LD      407.52(6.12)   395.1(2.4)   +12.42     1.9     61.5%            +3.1%
+   total   713.20(6.10)   693.0(3.9)   +20.20     2.8    100.0%            +2.9%
+   (LD lattice = total - SD - W; its uncertainty here ignores correlations, so it is conservative.)
+
+   Davier et al. 2023, intermediate window with each pi pi dataset (1e-10): KLOE 227.3, BaBar 230.8,
+   tau 232.4, CMD-3 234.2; lattice average quoted there 236.1(0.9).
+   CMD-3 - KLOE in W = 6.9;  lattice(WP25) - CMD-3-based W = 2.4
+
+B. CMD-3 - KLOE pi pi difference (data in this repo, 0.32-0.975 GeV), split by window, 1e-10
+   SD   +0.70  ( 3.3% of the difference)
+   W    +6.85  (31.9% of the difference)
+   LD  +13.91  (64.8% of the difference)
+   sum +21.47
+   For comparison, KLOE's own pi pi integral splits as: SD 2.8%, W 27.9%, LD 69.3%
+
+C. Ratio test (inference): if the whole lattice-data gap came from a pi pi normalisation offset
+   with the energy profile of CMD-3 - KLOE, the W:LD split of the gap would follow part B.
+   Predicted share of gap in W = 32%, in LD = 65%;  observed (part A): W 36%, LD 61%
+   Gap scaled from part A W difference: 22.5  vs actual total gap 20.2
