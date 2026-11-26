@@ -9,4 +9,11 @@ Within LO HVP (1e-10): WP20 merged 693.1(4.0); single-dataset alternatives from 
   BaBar   701.4  shift vs WP20  +8.3  remaining to lattice 713.2: +11.8
   tau     704.5  shift vs WP20 +11.4  remaining to lattice 713.2:  +8.7
   CMD-3   713.2  shift vs WP20 +20.1  remaining to lattice 713.2:  +0.0
-  Radiative-correction scenario (DHLMZ, disputed): KLOE pi pi +0.7%..+2.0% in 0.6-0.88 GeV = 2.5..7.2 of the 18.7 KLOE-CMD-3 difference there
+  Radiative-correction scenarios (DHLMZ arXiv:2312.02053 Sec. 5, disputed by WP25 Sec. 2.5.1):
+  upward KLOE08 correction +0.7% (scen. 2) to ~+1% (scen. 1 after NLO cancellation); WP25 generator tests limit
+  PHOKHARA to ~1%; KKMC would shift the other way. Applied to the whole KLOE combination (upper bound,
+  KLOE10/12 less affected), 0.6-0.88 GeV integral 360.6:
+    -0.3% -> -1.1 of the 18.7 KLOE-CMD-3 difference (-6%)
+    +0.7% -> +2.5 of the 18.7 KLOE-CMD-3 difference (+13%)
+    +1.0% -> +3.6 of the 18.7 KLOE-CMD-3 difference (+19%)
+  (scenario-1 NNLO piece alone, +2%, would be 7.2; DHLMZ say it is partly cancelled)

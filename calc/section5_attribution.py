@@ -21,8 +21,14 @@ L.append("")
 L.append("Within LO HVP (1e-10): WP20 merged 693.1(4.0); single-dataset alternatives from WP25 Table 5 + 187.3 offset:")
 for n, v in [("KLOE", 691.8), ("BaBar", 701.4), ("tau", 704.5), ("CMD-3", 713.2)]:
     L.append(f"  {n:6s} {v:6.1f}  shift vs WP20 {v-693.1:+5.1f}  remaining to lattice 713.2: {713.2-v:+5.1f}")
-L.append("  Radiative-correction scenario (DHLMZ, disputed): KLOE pi pi +0.7%..+2.0% in 0.6-0.88 GeV"
-         f" = {0.007*360.6:.1f}..{0.02*360.6:.1f} of the 18.7 KLOE-CMD-3 difference there")
+L.append("  Radiative-correction scenarios (DHLMZ arXiv:2312.02053 Sec. 5, disputed by WP25 Sec. 2.5.1):")
+L.append("  upward KLOE08 correction +0.7% (scen. 2) to ~+1% (scen. 1 after NLO cancellation); WP25 generator tests limit")
+L.append("  PHOKHARA to ~1%; KKMC would shift the other way. Applied to the whole KLOE combination (upper bound,")
+L.append("  KLOE10/12 less affected), 0.6-0.88 GeV integral 360.6:")
+# -0.3% is an illustrative KKMC-direction value chosen here, not a number from any source.
+for f in (-0.003, 0.007, 0.01):
+    L.append(f"    {100*f:+.1f}% -> {f*360.6:+.1f} of the 18.7 KLOE-CMD-3 difference ({100*f*360.6/18.7:+.0f}%)")
+L.append(f"  (scenario-1 NNLO piece alone, +2%, would be {0.02*360.6:.1f}; DHLMZ say it is partly cancelled)")
 os.makedirs(os.path.join(os.path.dirname(__file__), "out"), exist_ok=True)
 open(os.path.join(os.path.dirname(__file__), "out", "section5_attribution.txt"), "w").write("\n".join(L) + "\n")
 print("\n".join(L))

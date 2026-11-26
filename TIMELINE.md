@@ -27,3 +27,6 @@ Dates are the arXiv submission month (from the arXiv identifier) unless a specif
 | 2024-11 | Mainz full HVP; FNAL/HPQCD/MILC window; BMW HLbL | 724.5(7.1); 236.45(85); 125.5(11.6) | | Mainz24, FHM24, BMW-HLbL24 |
 | 2025-05-28 | WP25 posted | a_SM = 116 592 033(62); HVP LO lattice 713.2(6.1); no pi pi average | SM shifts +223 | WP25 |
 | 2025-06-03 | FNAL final (Runs 1-6) | FNAL 116 592 070.5(14.8) (127 ppb); world average 116 592 071.5(14.5) | 0.6 sigma vs WP25; 5.8 sigma vs WP20 | FNAL25, WP25 |
+| 2026-05 | tau-data vs lattice comparison | "generally good agreement" | tau route consistent with lattice | Allen26 |
+| 2026-10 | ETMC full HVP | 714.9(8.1) | agrees with WP25 lattice average | ETMC26 |
+| 2026-11-03 | BaBar re-analysis of full data set (angular pi/mu separation) | 0.6-0.883 GeV: 376.9(2.9) vs CMD-3 380.6(3.0), KLOE 361.8(2.1), BaBar-09 371.2(2.7) | first independent result near CMD-3's level; new BaBar-09 vs BaBar-26 tension | BaBar26 |

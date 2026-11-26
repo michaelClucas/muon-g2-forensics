@@ -9,7 +9,7 @@ Every paper used, with identifier and what was taken from it. Local text copies 
 | FNAL21 | B. Abi et al. (Muon g-2), PRL 126 (2021) 141801, arXiv:2104.03281 | a_mu(FNAL)=116 592 040(54); average 116 592 061(41); 4.2 sigma |
 | FNAL23 | D. P. Aguillard et al. (Muon g-2), PRL 131 (2023) 161802, arXiv:2308.06230 | FNAL Run1-3 116 592 055(24); average 116 592 059(22); "5.0 sigma" (FNAL vs WP20) |
 | FNAL25 | D. P. Aguillard et al. (Muon g-2), arXiv:2506.03069 | FNAL 116 592 0705(148)e-12 (127 ppb); world average 116 592 0715(145)e-12 (124 ppb) |
-| E821 | G. W. Bennett et al., PRD 73 (2006) 072003, arXiv:hep-ex/0602035 | Final BNL result (used via WP20's adjusted value) |
+| E821 | G. W. Bennett et al., PRD 73 (2006) 072003, arXiv:hep-ex/0602035 | Final BNL result; only the WP20-adjusted value 116 592 089(63) was read from a source. The original 116 592 080(63) is quoted from memory (unverified here) |
 | Volkov24 | S. Volkov, arXiv:2404.00649 | A1(10) = 5.891(61), 5 sigma from AHKN |
 | AKN19 | T. Aoyama, T. Kinoshita, M. Nio, Atoms 7 (2019) 28; also arXiv:1712.06060, arXiv:1205.5370 | AHKN tenth-order QED (as summarized in WP20) |
 | GSS13 | C. Gnendiger, D. Stockinger, H. Stockinger-Kim, PRD 88 (2013) 053005, arXiv:1306.5546 | Two-loop EW (via WP20) |
@@ -21,13 +21,13 @@ Every paper used, with identifier and what was taken from it. Local text copies 
 | CMD3-23 | F. V. Ignatov et al. (CMD-3), PRD 109 (2024) 112002, arXiv:2302.08834 | Table 4 (per-experiment 0.6-0.88 GeV integrals); ancillary fpi_CMD3.dat (CC-BY 4.0, committed in data/) |
 | DHMZ19 | M. Davier, A. Hoecker, B. Malaescu, Z. Zhang, EPJC 80 (2020) 241, arXiv:1908.00921 | HVP LO 694.0(4.0) (abstract) |
 | KNT19 | A. Keshavarzi, D. Nomura, T. Teubner, PRD 101 (2020) 014029, arXiv:1911.00367 | HVP LO 692.78(2.42) (Eq. near Fig. 8) |
-| CMD3-PRL | F. V. Ignatov et al. (CMD-3), arXiv:2309.12910 (PRL version) | 0.7% systematic near the rho (abstract) |
-| BaBar23 | J. P. Lees et al. (BaBar), arXiv:2308.05233 | abstract: PHOKHARA NLO discrepancies; negligible for BaBar pi pi |
+| CMD3-PRL | F. V. Ignatov et al. (CMD-3), PRL 132 (2024) 231903, arXiv:2309.12910 | 0.7% systematic near the rho (abstract) |
+| BaBar23 | J. P. Lees et al. (BaBar), PRD 108 (2023) L111103, arXiv:2308.05233 | abstract: PHOKHARA NLO discrepancies; negligible for BaBar pi pi |
 | DHLMZ23 | M. Davier, A. Hoecker, A.-M. Lutz, B. Malaescu, Z. Zhang, EPJC 84 (2024) 721, arXiv:2312.02053 | Sec. 5 (KLOE08 -0.7% to -2.0%, BESIII -3.2%); Sec. 8 (>3 sigma KLOE-BaBar, >5 sigma KLOE-CMD-3); Eq. 4 (tau pi pi 517.3); IB total -14.9(1.9); Fig. 12 window values |
 | IgnatovLee22 | F. Ignatov, R. N. Lee, arXiv:2204.12235 | abstract: charge asymmetry needs pion structure beyond the simplified treatment |
-| CHMR22 | G. Colangelo, M. Hoferichter, J. Monnard, J. Ruiz de Elvira, arXiv:2207.03495 | abstract: significant corrections beyond scalar QED |
+| CHMR22 | G. Colangelo, M. Hoferichter, J. Monnard, J. Ruiz de Elvira, JHEP 08 (2022) 295, arXiv:2207.03495 | abstract: significant corrections beyond scalar QED |
 | RMCL2 | RadioMonteCarLow 2 Working Group, arXiv:2410.22882 | used only via WP25 Sec. 2.12 summary |
-| MMR23 | P. Masjuan, A. Miranda, P. Roig, arXiv:2305.20005 | abstract: tau-based windows compatible with lattice |
+| MMR23 | P. Masjuan, A. Miranda, P. Roig, PLB 850 (2024) 138492, arXiv:2305.20005 | abstract: tau-based windows compatible with lattice |
 | CHKLST22 | G. Colangelo et al., PLB 833 (2022) 137313, arXiv:2205.12963 | Table 1: data-driven SD 68.4(5), W 229.4(1.4), LD 395.1(2.4), total 693.0(3.9) |
 | RBC18 | T. Blum et al. (RBC/UKQCD), PRL 121 (2018) 022003, arXiv:1801.07224 | window definition t0=0.4 fm, t1=1.0 fm, Delta=0.15 fm |
 | RBC23 | T. Blum et al. (RBC/UKQCD), PRD 108 (2023) 054507, arXiv:2301.08696 | W = 235.56(65)(50), Eq. 44 |
@@ -41,3 +41,11 @@ Every paper used, with identifier and what was taken from it. Local text copies 
 | Mainz-HLbL21 | E.-H. Chao et al. (Mainz), EPJC 81 (2021) 651, arXiv:2104.02632 | HLbL 106.8(14.7) x10^-11 |
 | BMW-HLbL24 | Z. Fodor et al. (BMW), arXiv:2411.11719 | HLbL 125.5(11.6)(0.4) x10^-11 |
 | Kurz14 | A. Kurz, T. Liu, P. Marquard, M. Steinhauser, PLB 734 (2014) 144, arXiv:1403.6400 | HVP NNLO 1.24(1) x10^-10 |
+| WP20 (extra locations) | as WP20 | Sec. 2.2.4 ("CMD-2/SND/BESIII/CLEO are compatible with either KLOE or BABAR"); Sec. 2.2.6 (tau exclusion quote); Table 2 (IB -16.07(1.85)); Sec. 2.3.6-2.3.7 |
+| WP25 (extra locations) | as WP25 | Sec. 2.2.2 (SND preliminary, 0.6-0.8% syst.); Sec. 2.2.3 (KLOE FSR uncertainties); Sec. 2.5.1 (KLOE below / CMD-3 above, KLOE slopes 2.5-3 sigma, PHOKHARA 1% vs quoted 0.5%); Sec. 2.12 (quotes); Eq. 3.26; Eq. 3.30 (IB 0.1(3.4)); Table 9; Table 17; Eqs. 7.14-7.19 (A1(10) resolution: AHKN 5.870(128), average 5.887(55)) |
+| BaBar26 | BaBar Collaboration, "A New Precise Measurement of the e+e- -> pi+pi-(gamma) Cross Section with the Initial-State Radiation Method at BaBar", arXiv:2611.04621 (2026-11-03) | abstract (525.9(3.5)(3.8); 09+26 combination 517.8(2.4)(3.3), 0.3-1.4 GeV); Fig. 69 (0.6-0.8832 GeV comparison: BaBar-09 371.2, BaBar-26 376.9, CMD-3 380.6, KLOE 361.8); text before Sec. XVIII (520.7 vs CMD-3 520.3); "typically below 2.5" sigma 09 vs 26 |
+| ETMC26 | ETMC, arXiv:2610.22224 (2026-10-15) | abstract: full HVP 714.9(8.1) using WP25 IB 0.1(3.4) |
+| Allen26 | arXiv:2605.12205 (2026-05-12), "Comparison of the hadronic vacuum polarization between hadronic tau-decay data and lattice QCD" | abstract: "generally good agreement" tau vs lattice (isospin-one, light-connected) |
+| Narison26 | S. Narison, arXiv:2611.20762 (2026-11-16) | abstract: CMD-3-based HVP 7094(37)e-11; residual 2.1-3.5 sigma; criticism of WP25 averaging |
+
+Note on journal references: arXiv IDs were verified by downloading each paper (or its arXiv API record). Journal references for BaBar23, CMD3-PRL, CHMR22, MMR23 were supplied by a reviewer subagent from INSPIRE; others in this file were checked against the papers' own headers or the WP25 bibliography where available, and any not so checked should be treated as unverified.
