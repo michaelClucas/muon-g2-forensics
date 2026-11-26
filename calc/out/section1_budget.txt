@@ -1,0 +1,26 @@
+Sum of components (central): WP20 116591809.6 (quoted 116591810), WP25 116592033.5 (quoted 116592033)
+
+Gap a_exp - a_SM(WP20), in 1e-11:
+  E821 (WP20-adjusted)       279.0 +-  76.3  (3.7 sigma)
+  avg 2021 (Run1)            251.0 +-  59.4  (4.2 sigma)
+  avg 2023 (Run1-3)          249.0 +-  48.3  (5.2 sigma)
+  avg 2025 (Run1-6)          261.5 +-  45.4  (5.8 sigma)
+  WP25 vs 2025 average         38.5 +-  63.7  (0.6 sigma)
+
+Component shifts WP20 -> WP25 (1e-11), and share of the total upward shift:
+  QED            -0.13     -0.1%   (WP20 uncertainty 0.104)
+  EW              0.80      0.4%   (WP20 uncertainty 1.0)
+  HVP_LO        201.00     89.8%   (WP20 uncertainty 40)
+  HVP_NLO        -1.30     -0.6%   (WP20 uncertainty 0.7)
+  HVP_NNLO        0.00      0.0%   (WP20 uncertainty 0.1)
+  HLbL_total     23.50     10.5%   (WP20 uncertainty 18)
+  total         223.87
+
+Precision of non-hadronic pieces vs the 2025 gap to WP20 (262):
+  QED uncertainty 0.104 (WP20), 0.2 (WP25); EW 1.0 (WP20), 0.4 (WP25)
+  AHKN vs Volkov A1(10) difference 0.846 -> (alpha/pi)^5 * dA = 0.0057 e-11
+  Whole universal 5-loop term (alpha/pi)^5*A1(10) = 0.0456 e-11
+  Mass-dependent A2(10)(m_mu/m_e)=742.32 term = 5.020 e-11
+
+HVP LO required by experiment given WP25 non-LO-HVP pieces: 7170 (cf. WP20 e+e- 6931, WP25 lattice 7132)
+HVP LO required given WP20 non-LO-HVP pieces:                7193
