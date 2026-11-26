@@ -1,0 +1,12 @@
+Gap a_exp(2025) - a_SM(WP20) = 261.5 +- 45.4
+  HVP LO (e+e- 2020 -> lattice 2025)      +201.0 +-  72.9    76.9% of gap
+  HLbL incl. NLO                           +23.5 +-  20.5     9.0% of gap
+  QED + EW + HVP NLO/NNLO                   -0.6 +-   1.7    -0.2% of gap
+  remaining a_exp - a_SM(WP25)             +37.6 +- 63.7     14.4% of gap (quoted 38(63))
+
+Within LO HVP (1e-10): WP20 merged 693.1(4.0); single-dataset alternatives from WP25 Table 5 + 187.3 offset:
+  KLOE    691.8  shift vs WP20  -1.3  remaining to lattice 713.2: +21.4
+  BaBar   701.4  shift vs WP20  +8.3  remaining to lattice 713.2: +11.8
+  tau     704.5  shift vs WP20 +11.4  remaining to lattice 713.2:  +8.7
+  CMD-3   713.2  shift vs WP20 +20.1  remaining to lattice 713.2:  +0.0
+  Radiative-correction scenario (DHLMZ, disputed): KLOE pi pi +0.7%..+2.0% in 0.6-0.88 GeV = 2.5..7.2 of the 18.7 KLOE-CMD-3 difference there

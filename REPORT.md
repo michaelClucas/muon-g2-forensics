@@ -150,3 +150,44 @@ LD for lattice is derived here by subtraction, and its uncertainty ignores corre
 - If the lattice-vs-data gap were caused by a pi pi normalization deficit with the energy profile of KLOE relative to CMD-3, 32% of it would appear in W and 65% in LD. Observed: 36% and 61%. Scaling the observed W difference (7.2) by 1/0.32 predicts a total gap of 22.5 vs the actual 20.2 [calc:section4_windows]. The window pattern is consistent with a 3-5% deficit in the pi pi cross section spread across roughly 0.5-1.0 GeV, centred on the rho (Inference). It is not consistent with a problem confined to high energies (that would show in SD) or to the threshold region below 0.5 GeV (that would put over 85% in LD).
 - With CMD-3 as the pi pi input the W window becomes 234.2, 2.4 x 10^-10 below the lattice average 236.58(43); CMD-3 removes about 70% of the W discrepancy. With CMD-3 in the full HVP the total equals the lattice average (713.2) [S:WP25 Table 5]. I do not read anything into the 2.4 residual given the uncertainties of the non-pi pi channels in DHLMZ's W evaluation (Inference).
 - Energy range holding the discrepancy: 0.5-0.975 GeV in pi+pi-, with 87% of the CMD-3 - KLOE difference (18.7 of 21.5 x 10^-10) between 0.6 and 0.88 GeV [calc:pipi_by_experiment, out/pipi_energy_breakdown.csv].
+
+## 5. Answer
+
+### 5.1 Where the 2020 prediction went wrong
+In the leading-order hadronic vacuum polarization, and within it in the e+e- -> pi+pi- cross section between about 0.5 and 1.0 GeV (the rho region). The pre-2023 measurements that dominated the 2020 average (KLOE's three ISR analyses, plus CMD-2, SND and BESIII, which agree with KLOE within errors) are 3-5% lower than CMD-3 across that whole range, and the evidence from six independent lattice groups in the intermediate window, plus the window split in section 4, says the true cross section is close to CMD-3's level. BaBar sat in between. The specific mechanism inside the low experiments (a luminosity, efficiency, acceptance or radiative-correction normalization effect) has not been identified (**Disputed / unresolved**).
+
+### 5.2 How much each cause accounts for [calc:section5_attribution]
+Gap between the 2025 experimental world average and WP20: 262(45) x 10^-11.
+
+| Cause | Share of gap (x10^-11) | Status |
+|---|---|---|
+| LO HVP: e+e- data input (693.1 -> 713.2 x 10^-10) | +201(73), 77% | Established that the shift happened; cause inside the data unresolved |
+| HLbL central value moved up (92 -> 115.5) | +23.5(20.5), 9% | Established (WP25); lattice-vs-dispersive HLbL still differ by ~1.5 sigma |
+| QED, EW, HVP NLO/NNLO | -0.6(1.7), 0% | Established |
+| Still unexplained: a_exp - a_SM(WP25) | +38(63), 14% | Consistent with zero |
+
+Within the 201 x 10^-11 LO HVP shift (Inference from the cited numbers):
+- **pi+pi- normalization in 0.5-1.0 GeV:** essentially all of it. Swapping the pi pi input from the 2020 mix to CMD-3 alone moves HVP LO by +20.1 x 10^-10, which is the full shift. Using KLOE alone moves it by -1.3, BaBar alone by +8.3 [S:WP25 Table 5]. Which experiment(s) carry the error is not settled.
+- **Radiative corrections (PHOKHARA NNLO):** 0 to 7.2 x 10^-10 of the 18.7 x 10^-10 KLOE-CMD-3 difference in 0.6-0.88 GeV under DHLMZ's scenarios, i.e. 0-39% of that piece. WP25 judges the larger scenario unlikely, so the central expectation is near the low end. This mechanism does not apply to the energy-scan experiments (CMD-2, SND), which were also low.
+- **Combination procedure:** about 0 for the central value; no reweighting of the pre-2023 data reaches the lattice value. It accounts for the quoted 4.0 x 10^-10 uncertainty being about 5 times too small relative to the eventual shift.
+- **Tau exclusion:** 0 to +11.4 x 10^-10 depending on how tau would have been weighted; using tau alone gives 704.5, still 8.7 below lattice.
+- **Lattice error:** cannot be excluded at the ~1% level for the total HVP, since full-HVP lattice results spread from 707.5 to 729.4 x 10^-10. The W window, where the lattice is cleanest, agrees across six groups and confirms the sign and roughly the size of the e+e- deficit.
+
+### 5.3 What remains unexplained
+- The CMD-3 vs KLOE (and vs BaBar, CMD-2, SND, BESIII) tension is unresolved as of WP25 (May 2025, updated June 2025). WP25 declined to average the pi pi channel for that reason. No experimental error has been found in KLOE, CMD-2, SND or BESIII, and none in CMD-3 [S:WP25 Sec. 2.12]. I found no primary source after WP25 that resolves it; the new analyses listed in WP25 (KLOE, BaBar angular-fit analysis, BESIII, SND, CMD-3, Belle II) had not been checked by me for publication status (**Unverified** for anything after June 2025).
+- Lattice full-HVP values disagree among themselves by more than their quoted errors in some pairs (BMW-20 707.5(5.5) vs Mainz-24 724.5(7.1)); the long-distance window is the least cross-checked part.
+- Tau-based pi pi (517.2) is still below CMD-3 (525.9) by 1.2 sigma of the combined uncertainty; the IB corrections remain the limiting factor.
+- HLbL: lattice 122.5(9.0) vs dispersive 103.3(8.8) x 10^-11, combined with a scale factor of 1.5 [S:WP25].
+- The residual a_exp - a_SM(WP25) = 38(63) x 10^-11 has an SM uncertainty four times the experimental one (62 vs 14.5), so the test of the SM at FNAL's final precision is limited by the LO HVP uncertainty.
+
+### 5.4 Was the theory framework ever wrong?
+No. The QED series (including the Schwinger term alpha/2pi and the 5-loop terms), the electroweak contributions and the dispersion relation linking HVP to R(s) were not the problem. QED and EW moved by -0.13 and +0.8 x 10^-11 between 2020 and 2025, against a 262 x 10^-11 gap; the one real QED disagreement (AHKN vs Volkov on the universal 5-loop coefficient) is worth 0.006 x 10^-11 for the muon (section 1). The dispersion integral itself reproduces published numbers to 0.1 x 10^-10 when fed the published data (section 2). The failure was confined to the experimental hadronic input: the measured pi+pi- cross section, plus the HLbL central value at the 10% level.
+
+### 5.5 Corrections to the premise of the investigation prompt
+- "Fermilab Run 1 in 2021, Runs 2-3 in 2023, final result in 2025 at ~127 ppb": confirmed (FNAL alone 127 ppb; world average 124 ppb) [S:FNAL25].
+- "a_mu^HVP,LO ≈ 6931(40) x 10^-11": confirmed [S:WP20].
+- "disagreed with the experimental average by roughly 4 to 5 sigma, a gap of roughly 2.5 x 10^-9": WP20 itself quoted 3.7 sigma vs E821 alone (279(76) x 10^-11). Against later averages: 4.2 sigma (2021), 5.2 sigma (2023, world average; FNAL alone 5.0), 5.8 sigma (2025). Gap 2.5-2.8 x 10^-9 depending on the average [calc:section1_budget].
+- "BMW computed a_mu^HVP,LO ≈ 7075(55) x 10^-11": confirmed for the published version (707.5(2.3)(5.0) x 10^-10); the first arXiv version had 712.4(4.5) [S:BMW20].
+- "CMD-3 measured ... above previous experiments ... in tension with KLOE, BaBar, and earlier CMD-2/SND data": confirmed; BaBar is the closest of these, about 2 sigma locally [S:DHLMZ23].
+- "2025 White Paper update adopted lattice HVP and found the SM prediction consistent with experiment": confirmed, 38(63) x 10^-11, 0.6 sigma [S:WP25].
+- The premise that the gap lives entirely in LO HVP is about 90% right: HLbL's upward revision supplied about 9% of the closure (section 1).
